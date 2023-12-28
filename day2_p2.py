@@ -27,16 +27,11 @@ with open(r"day2_input.txt", 'r') as fp:
         rgb[count] = array(line)
 fp.close()
 
-print(rgb[:10])
-
 sum = 0
 target = [12, 13, 14]
 for i in range(len(rgb)):
-    flag = True
+    game_sum = 1
     for col in range(3):
-        if (target[col] < rgb[i][col]):
-            flag = False
-            break
-    if (flag):
-        sum += (i + 1)
+        game_sum *= rgb[i][col]
+    sum += game_sum
 print (sum)
