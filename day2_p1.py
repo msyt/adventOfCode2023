@@ -5,7 +5,7 @@ def array(line):
     # remove Game X:
     line = line[line.find(':') + 2:]
     # seperate into draws
-    draws = line.split("; ")
+    draws = line.split(" | ")
     # everything goes [r, g, b]
     for draw in draws:
         colors = draw.split(", ")

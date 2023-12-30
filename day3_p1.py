@@ -1,6 +1,11 @@
-with open(r"day2_input.txt", 'r') as fp:
+# -1, -1 | -1, 0 | -1, 1
+#  0, -1 |  0, 0 |  0, 1
+#  1, -1 |  1, 0 |  1, 1
+
+with open(r"day3_input.txt", 'r') as fp:
     for count, line in enumerate(fp):
-        rgb[count] = array(line)
+        pass
 fp.close()
 
 valid = ['-', '+', '*', '&', '/', '@', '%', '=', '$', '#']
+

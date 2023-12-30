@@ -53,9 +53,9 @@ The rest of the almanac contains a list of maps which describe how to convert nu
 Rather than list every source number and its corresponding destination number one by one, the maps describe entire ranges of numbers that can be converted. Each line within a map contains three numbers: the destination range start, the source range start, and the range length.
 
 Consider again the example seed-to-soil map:
-
-50 98 2
-52 50 48
+dest | seed | number 
+ 50  |  98  |    2   --> there are 2 seeds to 2 sources, seed 98 to land 50, then seed 99 to land 51
+ 52  |  50  |   48   --> there are 48 seeds to 48 sources, seed 50 to land 52, seed 51 to land 53, then seed 52 to land 54
 The first line has a destination range start of 50, a source range start of 98, and a range length of 2. This line means that the source range starts at 98 and contains two values: 98 and 99. The destination range is the same length, but it starts at 50, so its two values are 50 and 51. With this information, you know that seed number 98 corresponds to soil number 50 and that seed number 99 corresponds to soil number 51.
 
 The second line means that the source range starts at 50 and contains 48 values: 50, 51, ..., 96, 97. This corresponds to a destination range starting at 52 and also containing 48 values: 52, 53, ..., 98, 99. So, seed number 53 corresponds to soil number 55.
